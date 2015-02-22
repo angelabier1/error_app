@@ -47,9 +47,15 @@ group :development, :test do
 	gem 'meta_request'
 
 	gem 'binding_of_caller'
+
+  gem 'pry-rails', '~> 0.3.3'
+
+	gem 'awesome_print'
 end
 
 gem 'devise'
-gem 'paperclip'
+# gem 'paperclip'
 gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'carrierwave'
 

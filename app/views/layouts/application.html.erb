@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ErrorApp</title>
+  <title>Error App</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">The Error app</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to "Errors", posts_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
+
+<footer>
+  <div class="container">
+    The Error App 2015
+  </div>
+</footer>
 
 </body>
 </html>
